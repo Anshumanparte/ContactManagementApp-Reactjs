@@ -160,9 +160,9 @@ const App = () => {
 
       </div>
 
-      <div className="contact-list grid grid-cols-3 gap-4 mt-6 w-full max-w-8xl ">
+      <div className="contact-list md:grid md:grid-cols-3  gap-4 mt-6 w-full max-w-8xl flex flex-col  ">
         {contactData.map((contact) => (
-          <div key={contact.id} className="contact-item bg-white p-4 rounded-lg shadow-md flex flex-col md:flex-row items-center md:items-start">
+          <div key={contact.id} className="contact-item bg-white p-4 rounded-lg shadow-md flex flex-col md:flex-row items-start md:items-start">
             <div className="flex-1">
               <p className="text-gray-800 font-medium"><strong>Name:</strong> {contact.name}</p>
               <p className="text-gray-800"><strong>Phone:</strong> {contact.phone}</p>
