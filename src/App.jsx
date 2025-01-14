@@ -146,7 +146,8 @@ const App = () => {
             setCurrentpage(currentpage-1)
           }
         }}>Prev</button>
-        {`<${currentpage}>....<${Math.ceil(contacts.length/postperpage)}>`}
+
+        {`<${currentpage}>....<${Math.ceil(contacts.length/postperpage) || 1}>`}
 
 
         <button 
